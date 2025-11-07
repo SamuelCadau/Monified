@@ -1,0 +1,13 @@
+{
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "editor.formatOnSave": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
+  "eslint.workingDirectories": [
+    "./front",
+    "./server"
+  ]
+}

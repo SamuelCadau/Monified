@@ -1,0 +1,48 @@
+{
+  "name": "monified-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "jest --forceExit --coverage --detectOpenHandles"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@alpacahq/alpaca-trade-api": "^2.16.1",
+    "@binance/connector": "^2.0.0-rc.4",
+    "axios": "^1.2.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "datetime-js": "^4.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
+    "jest": "^29.3.1",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
+    "passport-azure-ad": "^4.3.4",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-google-oidc": "^0.1.0",
+    "passport-microsoft": "^1.0.0",
+    "query-string": "^8.1.0",
+    "rss-parser": "^3.12.0",
+    "sequelize": "^6.25.5",
+    "sequelize-cli": "^6.5.2",
+    "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "supertest": "^6.3.4",
+    "sqlite3": "^5.1.7"
+  }
+}

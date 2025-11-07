@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+    branches: ["main", "master"]
+
+env:
+  NODE_ENV: test
+  VITE_API_BASE_URL: http://localhost:8080/api
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install server dependencies
+        working-directory: server
+        run: npm install
+
+      - name: Run server tests
+        working-directory: server
+        run: npm test
+
+      - name: Install frontend dependencies
+        working-directory: front
+        run: npm install
+
+      - name: Lint frontend
+        working-directory: front
+        run: npm run lint
+
+      - name: Build frontend
+        working-directory: front
+        run: npx quasar build

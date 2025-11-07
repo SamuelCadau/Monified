@@ -1,0 +1,27 @@
+// app global css in SCSS form
+@font-face {
+  font-family: WorkSans;
+  src: url(./fonts/WorkSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: WorkBold;
+  src: url(./fonts/WorkSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: WorkThin;
+  src: url(./fonts/WorkSans-Thin.ttf);
+}
+
+.WorkThin {
+  font-family: "WorkThin";
+}
+
+.WorkBold {
+  font-family: "WorkBold";
+}
+
+.WorkSans {
+  font-family: "WorkSans";
+}

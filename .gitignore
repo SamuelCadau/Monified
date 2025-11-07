@@ -1,0 +1,19 @@
+# Environment files
+.env
+.env.*
+
+# Dependencies & builds
+node_modules/
+dist/
+build/
+coverage/
+
+# Tooling artifacts
+.DS_Store
+.history/
+*.log
+
+# Agent hand-off
+.agent/
+HANDOFF.md
+*.codex.*
