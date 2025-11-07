@@ -3,7 +3,7 @@ module.exports = (sequelize, Sequelize) => {
     "Picture",
     {
       id: {
-        type: Sequelize.INTEGER.UNSIGNED, // Already Positive
+        type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
       },

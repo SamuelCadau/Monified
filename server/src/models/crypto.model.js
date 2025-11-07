@@ -2,11 +2,11 @@ module.exports = (sequelize, Sequelize) => {
     const Crypto = sequelize.define(
       "Crypto",
       {
-        id: {
-          type: Sequelize.INTEGER.UNSIGNED, // Already Positive
-          primaryKey: true,
-          autoIncrement: true,
-        },
+      id: {
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+      },
         symbol: {
             type: Sequelize.STRING,
             allowNull: false,

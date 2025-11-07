@@ -3,7 +3,7 @@ module.exports = (sequelize, Sequelize) => {
     "RssField",
     {
       id: {
-        type: Sequelize.INTEGER.UNSIGNED, // Already Positive
+        type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
       },
